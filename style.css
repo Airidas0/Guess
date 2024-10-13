@@ -1,33 +1,29 @@
 *{
     margin: 0px;
+    touch-action: manipulation;
     
     
 }
-.bgimage{
+html{
     background-image: url(images/869923.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    filter: blur(3px);
-
 }
 .instructions{
     transform: translate(-50%, -50%);
-    top: 90%;
     left: 50%;
+    top: 90%;
     position: absolute;
     border: 1px, black, solid;
     border-radius: 5px;
     width: 90%;
     text-align: center;
-    background-color: hsla(0, 0%, 84%, 0.65);
-
+    background-color: hsl(0, 1%, 74%);
     
 }
 
 .instructions li{
     text-align: start;
     padding: 2px;
+
 }
 
 .container{
@@ -40,7 +36,8 @@
     left: 50%;
     position: absolute;
     padding: 50px;
-    background-color: hsla(0, 0%, 84%, 0.65);
+    background-color: hsl(0, 0%, 84%);
+    
 }
 #min{
     align-self: center;
@@ -48,6 +45,7 @@
     text-align: center;
     border-radius: 3px;
     border: 1px, black, solid;
+    font-size: 1.1em;
     
 }
 #max{
@@ -57,12 +55,14 @@
     border-radius: 3px;
     border: 1px, black, solid;
     margin: 2px;
+    font-size: 1.1em;
 }
 #mytext{
     text-align: center;
     border-radius: 3px;
     border: 1px, black, solid;
     margin: 2px;
+    font-size: 1.1em;
 }
 #title{
     padding: 5px;
@@ -71,14 +71,16 @@
     border-radius: 3px;
     border: 1px, black, solid;
     margin: 2px;
+    font-size: 1.1em;
 }
 #range{
     border-radius: 3px;
     border: 1px, black, solid;
     margin: 2px;
+    font-size: 1.1em;
 }
 .container:hover{
-    background-color: hsla(0, 0%, 87%, 0.65);
+    background-color: hsl(0, 0%, 87%);
 }
 #range:hover{
     background-color: hsl(0, 0%, 88%);
@@ -87,11 +89,17 @@
     background-color: hsl(0, 0%, 88%);
 }
 #range:active{
-    font-size: 13px;
+    font-size: 1.12em;
 }
 #mysubmit:active{
-    font-size: 13px;
+    font-size: 1.12em;
 }
 .instructions:hover{
-    background-color: hsla(0, 0%, 87%, 0.65);
+    background-color: hsl(0, 0%, 87%);
+}
+@media only screen and (max-width:600px) {
+    
+    .instructions{
+        margin-top: 30%;
+    }
 }

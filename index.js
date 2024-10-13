@@ -5,7 +5,7 @@ const output = document.getElementById("myh1");
 const mintext = document.getElementById("min");
 const maxtext = document.getElementById("max");
 const range = document.getElementById("range");
-let answer
+let answer;
 let min;
 let max;
 let guess;
@@ -13,9 +13,9 @@ let attempts = 0;
 let running = true;
 
 range.onclick = function(){
-     min = mintext.value;
-     max = maxtext.value;
-    answer = Math.floor(Math.random() * (max - min + 1) + min);
+     min = Number(mintext.value);
+     max = Number(maxtext.value);
+     answer = min + Math.floor(Math.random() * (max - min + 1));
 }
 
 submit.onclick = function(){
